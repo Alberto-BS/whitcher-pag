@@ -1,0 +1,182 @@
+header {
+	background-image: url('../img/mamadus.jpg');
+
+	background-size: cover;
+	height: 400px;
+	background-position: center;
+}
+
+
+
+.main {
+	background-image: url('../img/worldmap.webp');
+	background-attachment: fixed;
+	filter: blur(px);
+	background-size: cover;
+	height: 2000px;
+	width: 1890px;
+}
+
+
+.medallon{
+	display: flex;
+	padding-top: 50px;
+	justify-content: center;
+	opacity: 0; /* El medallón comienza invisible */
+	transition: opacity 0.5s ease-in; /* Transición de aparición instantanea */
+	transition: transform 15s ease-in-out; /* Transición de desaparición */
+  }
+  
+  .medallon:hover {
+	opacity: 1; /* El medallón se vuelve visible al pasar el ratón */
+  }
+  
+#menu {
+	background: #48545D;
+	height: 45px;
+	border-radius: 16px;
+}
+#menu ul, #menu li {
+	margin: 0 auto;
+	padding: 0;
+	list-style: none
+}
+#menu ul {
+	width: 100%;
+	text-align: center;
+}
+#menu li {
+	display: inline-block;
+	position: relative;
+}
+#menu a {
+	display: block;
+	line-height: 45px;
+	padding: 0 14px;
+	text-decoration: none;
+	color: #FFF9EF;
+	font-size: 23px;
+	text-transform: uppercase;
+}
+#menu a.dropdown-arrow:after {
+	content: "\2B9F";
+	margin-left: 5px;
+}
+#menu li a:hover {
+	color: #CC3306;
+	background: #48545D;
+}
+#menu input {
+	display: none;
+	margin: 0;
+	padding: 0;
+	height: 45px;
+	width: 100%;
+	opacity: 0;
+	cursor: pointer
+}
+#menu label {
+	display: none;
+	line-height: 45px;
+	text-align: center;
+	position: absolute;
+	left: 35px
+}
+#menu label:before {
+	font-size: 1.6em;
+	color: #FFF9EF;
+	content: "\2261"; 
+	margin-left: 20px;
+}
+#menu ul.sub-menus{
+	height: auto;
+	overflow: hidden;
+	width: 170px;
+	background: #48545D;
+	position: absolute;
+	z-index: 99;
+	display: none;
+}
+#menu ul.sub-menus li {
+	display: block;
+	text-align: left;
+	width: 100%;
+}
+#menu ul.sub-menus a {
+	color: #FFFFFF;
+	font-size: 17px;
+}
+#menu li:hover ul.sub-menus {
+	display: block
+}
+#menu ul.sub-menus a:hover{
+	background: #48545D;
+	color: #CC3306;
+}
+@media screen and (max-width: 800px){
+	#menu {position:relative}
+	#menu ul {background:#48545D;position:absolute;top:100%;right:0;left:0;z-index:3;height:auto;display:none;text-align:left;}
+	#menu ul.sub-menus {width:100%;position:static;}
+	#menu ul.sub-menus a {padding-left:30px;}
+	#menu li {display:block;float:none;width:auto;}
+	#menu input, #menu label {position:absolute;top:0;left:0;display:block}
+	#menu input {z-index:4}
+	#menu input:checked + label {color:#FFF9EF}
+	#menu input:checked + label:before {content:"\00d7"}
+	#menu input:checked ~ ul {display:block}
+}
+
+.flex-container{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: normal;
+	align-content: space-around,
+	
+  }
+  
+  .flex-items:nth-child(1) {
+	display: block;
+	flex-grow: 0;
+	flex-shrink: 1;
+	flex-basis: auto;
+	align-self: auto;
+	order: 0;
+  }
+  
+  .flex-items:nth-child(2) {
+	display: block;
+	flex-grow: 0;
+	flex-shrink: 1;
+	flex-basis: auto;
+	align-self: auto;
+	order: 0;
+  }
+  
+  .flex-items:nth-child(3) {
+	display: block;
+	flex-grow: 0;
+	flex-shrink: 1;
+	flex-basis: auto;
+	align-self: auto;
+	order: 0;
+  }
+
+  h1 {
+	font-family: "Playfair Display", sans-serif;
+	color: #48545D;
+  }
+
+  h2{
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	color: #48545D;}
+
+  h3{
+	font-style:initial;
+	font-size:small;
+	border-radius:calc(10%);}
+
+
+
+
